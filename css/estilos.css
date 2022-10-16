@@ -1,0 +1,191 @@
+* {margin: 0px; padding:0px; list-style:none; text-decoration:none; box-sizing: border-box;}
+
+body {background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/topography.png");}
+.container{max-width: 1200px;margin: 0px auto;padding: 0px 20px;}
+
+img {max-width:100%; height:auto}
+
+header {background-color: #cc9900; position: fixed; width: 100%;}
+#no-fixed {position: initial;}
+
+nav {display: flex;flex-wrap: wrap;flex-direction: row;font-family: 'Lobster', cursive; }
+nav a {color: antiquewhite; padding: 15px; font-size: 1.1rem;}
+nav a:hover {background-color: rgba(0,0,0,0.1);}
+
+#portada {background-image: url(../img/fondo-home.jpg);background-position: center center;background-attachment: fixed;
+	background-size: cover;background-repeat: no-repeat;height: 100vh;display: flex;flex-wrap: wrap;flex-direction: row;
+	align-items: center;padding-top: 52px;}
+
+.textos-portada {font-family: 'Lobster', cursive; display: flex;flex-wrap: wrap;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
+.textos-portada h1 {font-size: 8rem; color: antiquewhite; text-shadow: 1px 2px black;}
+.textos-portada h2 {font-size: 2.5rem; color: #865e44; text-shadow: 1px 2px black;}
+
+.boton {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: center;align-items: flex-start;}
+.boton a {color: white;padding: 10px 20px;background-color: #cc9900;margin: 20px 5px;border-radius: 3px;}
+
+
+.contenido-portada{}
+.contenido-portada h1 {font-family: 'Lobster', cursive; padding: 40px 0px; color: #cc9900; font-size: 3rem;}
+.contenido-portada p {text-align: justify; padding: 0px 0px 15px 0px; font-size: 1.1rem; color: #1d1d1d;}
+
+.more {color: brown;}
+
+.cajas{}
+.cajas-interno {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-between;align-items: center;
+				padding: 10px 0px 30px 0px;}
+.cajas-interno a {width: 32%;background-color: #ffffcc;color: #cc9900;border: 1px #cc9900 solid;padding: 30px;border-radius: 5px;
+				font-size: 2rem; margin: 50px 0px;border: 1px #cc9900 solid; text-align: center;}
+.cajas-interno a:hover {background-color: #cc9900; color: white; }
+
+
+
+/* ESTILOS DE PAGINAS INTERNAS */
+.contenido-paginas {}
+.contenido-paginas h1 {font-family: 'Lobster', cursive; padding: 40px 0px; color: #cc9900; font-size: 3rem;}
+.contenido-paginas p {text-align: justify; padding: 0px 0px 15px 0px; font-size: 1.1rem; color: #1d1d1d;}
+.imagenes {text-align: center !important;}
+
+/* -- ESTILOS DE PAGINAS INTERNAS -- */
+
+
+
+footer {background-color: #996633; color: #fff;font-family: 'Lobster', cursive; padding: 30px 0px; text-align: center;}
+.elementos-footer {display: flex;flex-wrap: wrap;flex-direction: row;align-items: center;justify-content: space-between;}
+.elementos-footer ul {width: 80px; display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-between;align-items: center;}
+.elementos-footer ul li a {color: #fff;}
+
+.visitas {color: aquamarine;}
+
+
+/* pagina de clientes*/
+   		
+/* pagina de libreta*/
+
+@media only screen and (max-width: 780px) {
+
+	.cajas-interno {flex-direction: column;}
+	.cajas-interno a {width: 100%; margin: 10px 0px;}
+	.elementos-footer {flex-direction: column;}
+
+}
+
+@media only screen and (max-width: 530px) {
+
+	.textos-portada h1 {font-size: 4rem;}	
+	.textos-portada h2 {font-size: 1.5rem;}
+	.boton a {margin: 5px}
+
+}
+
+
+
+/* Estilos de terceros para el javascript */
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 300px;
+	padding: 0px;
+	margin: 20px 0px;
+	list-style-type: none;
+	
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+
+}
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+	
+}
+
+.slide:nth-of-type(1){
+	background-image: url("../img/1c.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(2){
+	background-image: url("../img/F100009420.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(3){
+	background-image: url("../img/107_508649404.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(4){
+	background-image: url("../img/facturas.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide:nth-of-type(5){
+	background-image: url("../img/pexels-larissa-megale-3806365.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* acordeon */
+button.accordion {
+    background-color: #ffffcc;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ffff99;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.acordion {margin: 10px 0px 40px 0px;}
+.acordion h2 {margin: 10px 0px 20px 0px; font-family: 'Lobster'; color: #cc9900;}
+
